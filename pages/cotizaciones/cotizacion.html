@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Cotización" />
+    <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+    integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l"
+    crossorigin="anonymous"
+  />
+  <script
+    src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+    crossorigin="anonymous"
+  ></script>
+  <script
+    src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+    integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+    crossorigin="anonymous"
+  ></script>
+  <script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.min.js"
+    integrity="sha384-+YQ4JLhjyBLPDQt//I+STsc9iw4uQqACwlvpslubQzn4u2UU2UFM80nGisd026JF"
+    crossorigin="anonymous"
+  ></script>
+    <link rel="stylesheet" href="../../css/stylesheet.css" />
+    <link rel="stylesheet" href="cotizacion.css" />
+    <title>Samuel Buendía</title>
+  </head>
+  <body>
+      <nav
+        class="navbar sticky-top navbar-expand-lg navbar-light bg-light px-md-5"
+      >
+        <a class="navbar-brand" href="../../index.html">Inicio</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div
+          class="collapse navbar-collapse justify-content-end"
+          id="navbarSupportedContent"
+        >
+          <ul id="nav" class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link" href="../estudios.html">Estudios</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="../certificados.html">Certificados</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="../experiencia.html">Experiencia</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="../portafolio.html">Portafolio</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="../contacto.html">Contácto</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+
+      <div class="container-fluid" id="welcome">
+        <div class="row" >
+          <div class="col-12 d-flex minh-100vh h-auto flex-column justify-content-center align-items-center text-center">
+              <img src="../../img/cotizacion/ilustracionDisenoWeb.png" class="img-fluid col-12 col-md-5" alt="">
+              <h1 class="pt-3 pb-2">
+                ¿Cuánto cuesta crear mi página web?
+              </h1>
+              <p>Calcula de forma rápida el costo para crear tu web, contestando estas sencillas preguntas.</p>
+              <button type="button" id="start" class="btn btn-lg btn-outline-secondary mb-5 mt-3">Empezemos</button>
+          </div>
+        </div>
+      </div>
+      
+      <div class="container-fluid" >
+        <div class="row justify-content-center">
+            <div class="col-md-9">
+                <div class="card text-center justify-content-center shaodw-lg card-1 border-0 bg-white px-sm-2" >
+                    <div class="card-body w-40 show " id="pasoUno">
+                      <div class="row">
+                          <div class="col-12 my-4 pb-3">
+                              <h2 class="mb-3"><b>Para comenzar...</b></h2>
+                              <h5><b>Por favor escribe tu Correo</b></h5>
+                              <form class="text-left mt-5">
+                                <div class="form-group">
+                                  <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+                                  <small id="emailHelp" class="form-text text-muted">Nunca compartiremos su correo electrónico con nadie.</small>
+                                </div>
+                                <div class="form-check">
+                                  <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                                  <label class="form-check-label" for="exampleCheck1">Recibir información de interés</label>
+                                </div>
+                              </form>
+                          </div>
+                      </div>
+                    </div>
+
+                    <div class="card-body show " id="pasoDos">
+                        <div class="row">
+                            <div class="col-12 my-4 pb-3">
+                                <h2 class="mb-3"><b>Que Tipo de Web Buscas</b></h2>
+                                <h5><b>Selecciona una opción</b></h5>
+                            </div>
+                        </div>
+                        <div class="radio-group row justify-content-between px-3 text-center a">
+                            <div class="col-auto mr-sm-2 mx-1 card-block py-0 text-center radio selected ">
+                                <div class="flex-row">
+                                    <div class="col">
+                                        <div class="pic"> <img class="irc_mut img-fluid" src="https://i.imgur.com/6r0XCez.png" width="100" height="100"> </div>
+                                        <p>Web <br> Personal</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-auto ml-sm-2 mx-1 card-block py-0 text-center radio ">
+                                <div class="flex-row">
+                                    <div class="col">
+                                        <div class="pic"> <img class="irc_mut img-fluid" src="https://i.imgur.com/bGCqROr.png" width="100" height="100"> </div>
+                                        <p>Web Empresa Básica</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-auto ml-sm-2 mx-1 card-block py-0 text-center radio ">
+                                <div class="flex-row">
+                                    <div class="col">
+                                        <div class="pic"> <img class="irc_mut img-fluid" src="https://i.imgur.com/bGCqROr.png" width="100" height="100"> </div>
+                                        <p>Web Empresa corporativa</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-auto ml-sm-2 mx-1 card-block py-0 text-center radio ">
+                                <div class="flex-row">
+                                    <div class="col">
+                                        <div class="pic"> <img class="irc_mut img-fluid" src="https://i.imgur.com/bGCqROr.png" width="100" height="100"> </div>
+                                        <p>Mostrar y vender productos</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row pb-5 mb-5 mt-4 ">
+          <div class="col-12 col-md-9 mx-auto d-flex justify-content-between">
+              <div class="col-auto pl-0"> <button type="button" class="btn btn-outline-secondary"> Anterior <span><i class="fa fa-angle-left" aria-hidden="true"></i></span></button></div>
+              <div class="col-auto pr-0"> <button type="button" class="btn btn-primary"> Siguiente <span><i class="fa fa-angle-right" aria-hidden="true"></i></span></button> </div>
+          </div>
+      </div>
+    </div>
+
+    <footer>
+      <section class="container-fluid bg-light">
+        <div
+          class="row py-4 justify-content-center align-items-center text-center"
+        >
+          <div class="col-12 col-md-6">
+            <h5>Contáctame</h5>
+            <p class="mb-1">Email: sbuendiapuyo@gmail.com</p>
+            <p>Teléfono: (+57) 3155927974</p>
+          </div>
+
+          <div class="col-12 col-md-6">
+            <h5>Redes Sociales</h5>
+
+            <a
+              href="https://www.facebook.com/profile.php?id=100009490854595"
+              target="_blank"
+            >
+              <img
+              class="mr-3"
+                style="width: 2%"
+                src="../../img/footer/facebook-f-brands.svg"
+                alt=""
+            /></a>
+            <a
+              href="https://www.linkedin.com/in/samuel-buend%C3%ADa-a433a81a9/"
+              target="_blank"
+            >
+              <img
+                class="mr-3"
+                style="width: 4%"
+                src="../../img/footer/linkedin-in-brands.svg"
+                alt=""
+            /></a>
+            <a href="https://github.com/SamuelBuendia" target="_blank">
+              <img style="width: 4%" src="../../img/footer/github-brands.svg" class="mr-3" alt="" />
+            </a>
+            <a href="https://wa.link/y6n141" target="_blank">
+              <img style="width: 4%" src="../../img/footer/whatsapp-brands.svg" alt=""/>
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <div class="container-fluid bg-dark text-light">
+        <div class="col-12 d-flex justify-content-center align-items-center">
+          <p class="mt-3">Todos los derechos reservados 2020 ©</p>
+        </div>
+      </div>
+    </footer>
+    
+    <link href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css'>
+    <script src="cotizacion.js"></script>
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.min.js"
+      integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0="
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
