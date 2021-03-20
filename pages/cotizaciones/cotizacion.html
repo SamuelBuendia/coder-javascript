@@ -30,45 +30,45 @@
     <title>Samuel Buendía</title>
   </head>
   <body>
-      <nav
-        class="navbar sticky-top navbar-expand-lg navbar-light bg-light px-md-5"
+    <nav
+      class="navbar sticky-top navbar-expand-lg navbar-light bg-light px-md-5 py-md-3"
+    >
+      <a class="navbar-brand" href="../../index.html">Inicio</a>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
       >
-        <a class="navbar-brand" href="../../index.html">Inicio</a>
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-toggle="collapse"
-          data-target="#navbarSupportedContent"
-          aria-controls="navbarSupportedContent"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button>
+        <span class="navbar-toggler-icon"></span>
+      </button>
 
-        <div
-          class="collapse navbar-collapse justify-content-end"
-          id="navbarSupportedContent"
-        >
-          <ul id="nav" class="navbar-nav">
-            <li class="nav-item">
-              <a class="nav-link" href="../estudios.html">Estudios</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="../certificados.html">Certificados</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="../experiencia.html">Experiencia</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="../portafolio.html">Portafolio</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="../contacto.html">Contácto</a>
-            </li>
-          </ul>
-        </div>
-      </nav>
+      <div
+        class="collapse navbar-collapse justify-content-end"
+        id="navbarSupportedContent"
+      >
+        <ul id="nav" class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link" href="../estudios.html">Estudios</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="../experiencia.html">Experiencia</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="../portafolio.html">Portafolio</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="../cotizaciones/cotizacion.html">Cotización</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="../contacto.html">Contácto</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
 
       <div class="container-fluid" id="welcome">
         <div class="row" >
@@ -83,11 +83,11 @@
         </div>
       </div>
       
-      <div class="container-fluid" >
+      <div class="container-fluid" id="pasoInicial">
         <div class="row justify-content-center">
             <div class="col-md-9">
                 <div class="card text-center justify-content-center shaodw-lg card-1 border-0 bg-white px-sm-2" >
-                    <div class="card-body w-40 show " id="pasoUno">
+                    <div class="card-body w-40 h-auto " id="paso0">
                       <div class="row">
                           <div class="col-12 my-4 pb-3">
                               <h2 class="mb-3"><b>Para comenzar...</b></h2>
@@ -106,7 +106,7 @@
                       </div>
                     </div>
 
-                    <div class="card-body show " id="pasoDos">
+                    <div class="card-body " style="display: none;" id="paso1">
                         <div class="row">
                             <div class="col-12 my-4 pb-3">
                                 <h2 class="mb-3"><b>Que Tipo de Web Buscas</b></h2>
@@ -114,7 +114,7 @@
                             </div>
                         </div>
                         <div class="radio-group row justify-content-between px-3 text-center a">
-                            <div class="col-auto mr-sm-2 mx-1 card-block py-0 text-center radio selected ">
+                            <div class="col-auto mr-sm-2 mx-1 card-block py-0 text-center radio1 " onclick="opcUno('Personal')">
                                 <div class="flex-row">
                                     <div class="col">
                                         <div class="pic"> <img class="irc_mut img-fluid" src="https://i.imgur.com/6r0XCez.png" width="100" height="100"> </div>
@@ -122,7 +122,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-auto ml-sm-2 mx-1 card-block py-0 text-center radio ">
+                            <div class="col-auto ml-sm-2 mx-1 card-block py-0 text-center radio1 " onclick="opcUno('Empresa Básica')">
                                 <div class="flex-row">
                                     <div class="col">
                                         <div class="pic"> <img class="irc_mut img-fluid" src="https://i.imgur.com/bGCqROr.png" width="100" height="100"> </div>
@@ -130,7 +130,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-auto ml-sm-2 mx-1 card-block py-0 text-center radio ">
+                            <div class="col-auto ml-sm-2 mx-1 card-block py-0 text-center radio1 " onclick="opcUno('Empresa Corporativa')">
                                 <div class="flex-row">
                                     <div class="col">
                                         <div class="pic"> <img class="irc_mut img-fluid" src="https://i.imgur.com/bGCqROr.png" width="100" height="100"> </div>
@@ -138,7 +138,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-auto ml-sm-2 mx-1 card-block py-0 text-center radio ">
+                            <div class="col-auto ml-sm-2 mx-1 card-block py-0 text-center radio1 " onclick="opcUno('Productos')">
                                 <div class="flex-row">
                                     <div class="col">
                                         <div class="pic"> <img class="irc_mut img-fluid" src="https://i.imgur.com/bGCqROr.png" width="100" height="100"> </div>
@@ -148,14 +148,302 @@
                             </div>
                         </div>
                     </div>
+
+                    <div class="card-body " style="display: none;" id="paso2">
+                      <div class="row">
+                          <div class="col-12 my-4 pb-3">
+                              <h2 class="mb-3"><b>¿Tienes un diseño gráfico definido?</b></h2>
+                              <h5><b>Selecciona una opción</b></h5>
+                          </div>
+                      </div>
+                      <div class="radio-group row justify-content-between px-3 text-center a">
+                          <div class="col-auto mr-sm-2 mx-1 card-block py-0 text-center radio2 " onclick="opcDos('Usaré plantilla')">
+                              <div class="flex-row">
+                                  <div class="col">
+                                      <div class="pic"> <img class="irc_mut img-fluid" src="https://i.imgur.com/6r0XCez.png" width="100" height="100"> </div>
+                                      <p>Usaré una <br> plantilla</p>
+                                  </div>
+                              </div>
+                          </div>
+                          <div class="col-auto ml-sm-2 mx-1 card-block py-0 text-center radio2 " onclick="opcDos('Quiero Diseño')">
+                              <div class="flex-row">
+                                  <div class="col">
+                                      <div class="pic"> <img class="irc_mut img-fluid" src="https://i.imgur.com/bGCqROr.png" width="100" height="100"> </div>
+                                      <p>Quiero un diseño gráfico a medida</p>
+                                  </div>
+                              </div>
+                          </div>
+                          <div class="col-auto ml-sm-2 mx-1 card-block py-0 text-center radio2 " onclick="opcDos('Ya cuento con uno')">
+                              <div class="flex-row">
+                                  <div class="col">
+                                      <div class="pic"> <img class="irc_mut img-fluid" src="https://i.imgur.com/bGCqROr.png" width="100" height="100"> </div>
+                                      <p>Ya cuento con un diseño gráfico web</p>
+                                  </div>
+                              </div>
+                          </div>
+                      </div>
+                    </div>
+
+                    <div class="card-body " style="display: none;" id="paso3">
+                      <div class="row">
+                          <div class="col-12 my-4 pb-3">
+                              <h2 class="mb-3"><b>¿Piensas en tu página con muchas animaciones?</b></h2>
+                              <h5><b>Selecciona una opción</b></h5>
+                          </div>
+                      </div>
+                      <div class="radio-group row justify-content-between px-3 text-center a">
+                          <div class="col-auto mr-sm-2 mx-1 card-block py-0 text-center radio3 " onclick="opcTres('Muchas animaciones')">
+                              <div class="flex-row">
+                                  <div class="col">
+                                      <div class="pic"> <img class="irc_mut img-fluid" src="https://i.imgur.com/6r0XCez.png" width="100" height="100"> </div>
+                                      <p>Muchas <br> animaciones</p>
+                                  </div>
+                              </div>
+                          </div>
+                          <div class="col-auto ml-sm-2 mx-1 card-block py-0 text-center radio3 " onclick="opcTres('Pocas animaciones')">
+                              <div class="flex-row">
+                                  <div class="col">
+                                      <div class="pic"> <img class="irc_mut img-fluid" src="https://i.imgur.com/bGCqROr.png" width="100" height="100"> </div>
+                                      <p>Pocas <br> animaciones</p>
+                                  </div>
+                              </div>
+                          </div>
+                          <div class="col-auto ml-sm-2 mx-1 card-block py-0 text-center radio3 " onclick="opcTres('No necesito')">
+                              <div class="flex-row">
+                                  <div class="col">
+                                      <div class="pic"> <img class="irc_mut img-fluid" src="https://i.imgur.com/bGCqROr.png" width="100" height="100"> </div>
+                                      <p>No necesito animaciones</p>
+                                  </div>
+                              </div>
+                          </div>
+                      </div>
+                    </div>
+
+                    <div class="card-body " style="display: none;" id="paso4">
+                      <div class="row">
+                          <div class="col-12 my-4 pb-3">
+                              <h2 class="mb-3"><b>¿En tu web se van a realizar pagos?</b></h2>
+                              <h5><b>Selecciona una opción</b></h5>
+                          </div>
+                      </div>
+                      <div class="radio-group row justify-content-between px-3 text-center a">
+                          <div class="col-auto mr-sm-2 mx-1 card-block py-0 text-center radio4 " onclick="opcCuatro('Si')">
+                              <div class="flex-row">
+                                  <div class="col">
+                                      <div class="pic"> <img class="irc_mut img-fluid" src="https://i.imgur.com/6r0XCez.png" width="100" height="100"> </div>
+                                      <p>Si, necesito pagos en línea</p>
+                                  </div>
+                              </div>
+                          </div>
+                          <div class="col-auto ml-sm-2 mx-1 card-block py-0 text-center radio4 " onclick="opcCuatro('No')">
+                              <div class="flex-row">
+                                  <div class="col">
+                                      <div class="pic"> <img class="irc_mut img-fluid" src="https://i.imgur.com/bGCqROr.png" width="100" height="100"> </div>
+                                      <p>No necesito pagos en línea</p>
+                                  </div>
+                              </div>
+                          </div>
+                      </div>
+                    </div>
+
+                    <div class="card-body " style="display: none;" id="paso5">
+                      <div class="row">
+                          <div class="col-12 my-4 pb-3">
+                              <h2 class="mb-3"><b>¿Va a ser una web multidioma?</b></h2>
+                              <h5><b>Selecciona una opción</b></h5>
+                          </div>
+                      </div>
+                      <div class="radio-group row justify-content-between px-3 text-center a">
+                          <div class="col-auto mr-sm-2 mx-1 card-block py-0 text-center radio5 " onclick="opcCinco('Si')">
+                              <div class="flex-row">
+                                  <div class="col">
+                                      <div class="pic"> <img class="irc_mut img-fluid" src="https://i.imgur.com/6r0XCez.png" width="100" height="100"> </div>
+                                      <p>Si, necesito dos Idiomas</p>
+                                  </div>
+                              </div>
+                          </div>
+                          <div class="col-auto ml-sm-2 mx-1 card-block py-0 text-center radio5 " onclick="opcCinco('No')">
+                              <div class="flex-row">
+                                  <div class="col">
+                                      <div class="pic"> <img class="irc_mut img-fluid" src="https://i.imgur.com/bGCqROr.png" width="100" height="100"> </div>
+                                      <p>No, con uno solo está bien</p>
+                                  </div>
+                              </div>
+                          </div>
+                      </div>
+                    </div>
+
+                    <div class="card-body " style="display: none;" id="paso6">
+                      <div class="row">
+                          <div class="col-12 my-4 pb-3">
+                              <h2 class="mb-3"><b>¿Tienes un Dominio para tú página?</b></h2>
+                              <h5><b>Selecciona una opción</b></h5>
+                          </div>
+                      </div>
+                      <div class="radio-group row justify-content-between px-3 text-center a">
+                          <div class="col-auto mr-sm-2 mx-1 card-block py-0 text-center radio6 " onclick="opcSeis('Si')">
+                              <div class="flex-row">
+                                  <div class="col">
+                                      <div class="pic"> <img class="irc_mut img-fluid" src="https://i.imgur.com/6r0XCez.png" width="100" height="100"> </div>
+                                      <p>Si, cuento <br> con uno </p>
+                                  </div>
+                              </div>
+                          </div>
+                          <div class="col-auto ml-sm-2 mx-1 card-block py-0 text-center radio6 " onclick="opcSeis('No, necesito uno')">
+                              <div class="flex-row">
+                                  <div class="col">
+                                      <div class="pic"> <img class="irc_mut img-fluid" src="https://i.imgur.com/bGCqROr.png" width="100" height="100"> </div>
+                                      <p>No, necesito uno con ustedes</p>
+                                  </div>
+                              </div>
+                          </div>
+                          <div class="col-auto ml-sm-2 mx-1 card-block py-0 text-center radio6 " onclick="opcSeis('No, lo consigo')">
+                              <div class="flex-row">
+                                  <div class="col">
+                                      <div class="pic"> <img class="irc_mut img-fluid" src="https://i.imgur.com/bGCqROr.png" width="100" height="100"> </div>
+                                      <p>No, lo consigo por mi cuenta</p>
+                                  </div>
+                              </div>
+                          </div>
+                      </div>
+                    </div>
+
+                    <div class="card-body " style="display: none;" id="paso7">
+                      <div class="row">
+                          <div class="col-12 my-4 pb-3">
+                              <h2 class="mb-3"><b>¿Tienes un Hosting para alojar tú página?</b></h2>
+                              <h5><b>Selecciona una opción</b></h5>
+                          </div>
+                      </div>
+                      <div class="radio-group row justify-content-between px-3 text-center a">
+                          <div class="col-auto mr-sm-2 mx-1 card-block py-0 text-center radio7 " onclick="opcSiete('Si')">
+                              <div class="flex-row">
+                                  <div class="col">
+                                      <div class="pic"> <img class="irc_mut img-fluid" src="https://i.imgur.com/6r0XCez.png" width="100" height="100"> </div>
+                                      <p>Si, cuento <br> con uno </p>
+                                  </div>
+                              </div>
+                          </div>
+                          <div class="col-auto ml-sm-2 mx-1 card-block py-0 text-center radio7 " onclick="opcSiete('No, necesito')">
+                              <div class="flex-row">
+                                  <div class="col">
+                                      <div class="pic"> <img class="irc_mut img-fluid" src="https://i.imgur.com/bGCqROr.png" width="100" height="100"> </div>
+                                      <p>No, necesito uno con ustedes</p>
+                                  </div>
+                              </div>
+                          </div>
+                          <div class="col-auto ml-sm-2 mx-1 card-block py-0 text-center radio7 " onclick="opcSiete('No, lo consigo')">
+                              <div class="flex-row">
+                                  <div class="col">
+                                      <div class="pic"> <img class="irc_mut img-fluid" src="https://i.imgur.com/bGCqROr.png" width="100" height="100"> </div>
+                                      <p>No, lo consigo por mi cuenta</p>
+                                  </div>
+                              </div>
+                          </div>
+                      </div>
+                    </div>
                 </div>
             </div>
         </div>
         <div class="row pb-5 mb-5 mt-4 ">
           <div class="col-12 col-md-9 mx-auto d-flex justify-content-between">
-              <div class="col-auto pl-0"> <button type="button" class="btn btn-outline-secondary"> Anterior <span><i class="fa fa-angle-left" aria-hidden="true"></i></span></button></div>
-              <div class="col-auto pr-0"> <button type="button" class="btn btn-primary"> Siguiente <span><i class="fa fa-angle-right" aria-hidden="true"></i></span></button> </div>
+              <div class="col-auto pl-0"> <button type="button" class="btn btn-outline-secondary" id="paginacionMenos" style="display: none;" onclick="paginacion('anterior')"> Anterior <span><i class="fa fa-angle-left" aria-hidden="true"></i></span></button></div>
+              <div class="col-auto pr-0"> <button type="button" class="btn btn-primary" id="paginacionMas" onclick="paginacion('siguiente')"> Siguiente <span><i class="fa fa-angle-right" aria-hidden="true"></i></span></button> </div>
+              <div class="col-auto pr-0" style="display: none;" id="paginacionEnviar"> <button type="button" class="btn btn-success" id="paginacionEnviarbtn" onclick="paginacionFinal()"> Enviar Cotización<span><i class="fa fa-angle-right" aria-hidden="true"></i></span></button> </div>
           </div>
+      </div>
+    </div>
+
+    <div class="container-fluid" style="display: none;" id="pasoFinal">
+      <div class="row justify-content-center my-5">
+        <div class="col-md-9">
+            <div class="card text-center justify-content-center shaodw-lg card-1 border-0 bg-white px-sm-2" >
+
+              <div class="">
+                <div class="row">
+                    <div class="col-12 my-4 pb-3">
+                        <h2 class="my-3"><b>FELICIDADES!</b></h2>
+                        <h5><b>El resumen de tu web.</b></h5>
+                    </div>
+                </div>
+
+                <div class="row my-2">
+                  <div class="col-12 col-md-9 text-left">
+                      <h4>Que Tipo de Web Buscas</h4>
+                  </div>
+                  <div class="col-3">
+                      <input id="respuesta1" class="text-center sinborde" value="" disabled>
+                  </div>
+                </div>
+
+                <div class="row my-2">
+                  <div class="col-12 col-md-9 text-left">
+                      <h4>¿Tienes un diseño gráfico definido?</h4>
+                  </div>
+                  <div class="col-3">
+                      <input id="respuesta2" class="text-center sinborde" value="" disabled>
+                  </div>
+                </div>
+
+                <div class="row my-2">
+                  <div class="col-12 col-md-9 text-left">
+                      <h4>¿Piensas en tu página con muchas animaciones?</h4>
+                  </div>
+                  <div class="col-3">
+                      <input id="respuesta3" class="text-center sinborde" value="" disabled>
+                  </div>
+                </div>
+
+                <div class="row my-2">
+                  <div class="col-12 col-md-9 text-left">
+                      <h4>¿En tu web se van a realizar pagos?</h4>
+                  </div>
+                  <div class="col-3">
+                      <input id="respuesta4" class="text-center sinborde" value="" disabled>
+                  </div>
+                </div>
+
+                <div class="row my-2">
+                  <div class="col-12 col-md-9 text-left">
+                      <h4>¿Va a ser una web multidioma?</h4>
+                  </div>
+                  <div class="col-3">
+                      <input id="respuesta5" class="text-center sinborde" value="" disabled>
+                  </div>
+                </div>
+
+                <div class="row my-2">
+                  <div class="col-12 col-md-9 text-left">
+                      <h4>¿Tienes un Dominio para tú página?</h4>
+                  </div>
+                  <div class="col-3">
+                      <input id="respuesta6" class="text-center sinborde" value="" disabled>
+                  </div>
+                </div>
+
+                <div class="row my-2">
+                  <div class="col-12 col-md-9 text-left">
+                      <h4>¿Tienes un Hosting para alojar tú página?</h4>
+                  </div>
+                  <div class="col-3">
+                      <input id="respuesta7" class="text-center sinborde" value="" disabled>
+                  </div>
+                </div>
+
+                <div class="row justify-content-center text-center my-5">
+                  <div class="col-12 col-md-4 text-left text-md-right">
+                      <h4>Total Aproximado:</h4>
+                  </div>
+                  <div class="col-12 col-md-4">
+                      <input id="respuesta" class="text-center sinborde" value="" disabled>
+                  </div>
+                  <div class="col-12 mt-4">
+                     <button type="button" class="btn btn-success" id="paginacionEnviarbtn" onclick="location.reload()"> Volver a empezar</button>
+                  </div>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
 
