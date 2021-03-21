@@ -15,7 +15,6 @@ function paginacion (valor) {
   } else if (valor == 'anterior') {
     pagina--
   }
-  console.log(pagina)
 
   boton(pagina);
 }
@@ -50,14 +49,19 @@ function boton (pagina) {
 $("#paginacionMas").on( "click", function() {
   $('.card-body ').hide();
   $('#paso'.concat(pagina)).show();
+  $('html, body').animate({
+    scrollTop: $('#paso'.concat(pagina)).offset().top-90
+  }, 2000);
  });
 $("#paginacionMenos").on( "click", function() {
   $('.card-body ').hide();
   $('#paso'.concat(pagina)).show();
+  $('html, body').animate({
+    scrollTop: $('#paso'.concat(pagina)).offset().top-90
+  }, 2000);
 });
 
 function opcUno (opcion) {
-  console.log(opcion);
   switch (opcion) {
     case 'Personal':
       costo1 = 100000;
@@ -75,12 +79,10 @@ function opcUno (opcion) {
       costo1 = 0;
       break;
   }
-  console.log(costo1);
   opcion1 = opcion;
 }
 
 function opcDos (opcion) {
-  console.log(opcion);
   switch (opcion) {
     case 'Usaré plantilla':
       costo2 = 100000;
@@ -92,12 +94,10 @@ function opcDos (opcion) {
       costo2 = 0;
       break;
   }
-  console.log(costo2);
   opcion2 = opcion;
 }
 
 function opcTres (opcion) {
-  console.log(opcion);
   switch (opcion) {
     case 'Muchas animaciones':
       costo3 = 300000;
@@ -109,12 +109,10 @@ function opcTres (opcion) {
       costo3 = 0;
       break;
   }
-  console.log(costo3);
   opcion3 = opcion;
 }
 
 function opcCuatro (opcion) {
-  console.log(opcion);
   switch (opcion) {
     case 'Si':
       costo4 = 300000;
@@ -123,12 +121,10 @@ function opcCuatro (opcion) {
       costo4 = 0;
       break;
   }
-  console.log(costo4);
   opcion4 = opcion;
 }
 
 function opcCinco (opcion) {
-  console.log(opcion);
   switch (opcion) {
     case 'Si':
       costo5 = 300000;
@@ -137,12 +133,10 @@ function opcCinco (opcion) {
       costo5 = 0;
       break;
   }
-  console.log(costo5);
   opcion5 = opcion;
 }
 
 function opcSeis (opcion) {
-  console.log(opcion);
   switch (opcion) {
     case 'No, necesito uno':
       costo6 = 200000;
@@ -151,12 +145,10 @@ function opcSeis (opcion) {
       costo6 = 0;
       break;
   }
-  console.log(costo6);
   opcion6 = opcion;
 }
 
 function opcSiete (opcion) {
-  console.log(opcion);
   switch (opcion) {
     case 'No, necesito uno':
       costo7 = 200000;
@@ -165,7 +157,6 @@ function opcSiete (opcion) {
       costo7 = 0;
       break;
   }
-  console.log(costo7);
   opcion7 = opcion;
 }
 
@@ -185,5 +176,17 @@ function paginacionFinal() {
   $("#respuesta7").attr("value", this.opcion7);
   $("#respuesta").attr("value", total);
 }
+
+$("#paginacionEnviar").click(function(){
+  $('html, body').animate({
+    scrollTop: $('#pasoFinal').offset().top-90
+  }, 1000);
+});
+
+$("#volverInicio").click(function(){
+  $('html, body').animate({
+    scrollTop: top-0
+  }, 1000);
+});
 
 
