@@ -16,10 +16,15 @@ h1 {
 h2 {
   letter-spacing: 0.6px;
   font-family: monospace;
+  font-weight: 300 !important;
 }
 
 h4 {
-  font-family: cursive;
+  font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+h5 {
+  font-weight: 200 !important;
 }
 
 // Tamaños Pantalla
